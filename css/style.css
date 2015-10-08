@@ -1,12 +1,30 @@
-* {
-  margin:0;
-  padding:0;
+/* CSS reset 
+  (all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
 }
 
+
+/* General styles 
+  (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
 body{
     font-family: Helvetica, Arial, sans-serif;
 }
 
+
+
+
+
+/* Header styles 
+  (all the styles inside the < header > or < nav > tags) 
+*/
 header{ 
   margin-top:0;
   color: white;
@@ -15,11 +33,11 @@ header{
   text-transform: uppercase;
   height: 500px;
   background-image: url(https://images.unsplash.com/photo-1433733071959-30cd185d14a8?q=80&fm=jpg&s=2bb5c5d8e0b1e5a0c994fc660681348e);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	background-color: #fff;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #fff;
 }
 
 .intro-small {
@@ -35,6 +53,10 @@ header{
   margin-top: 0;
 }
 
+
+/* Content styles 
+  (all the styles inside the < sections > or < aside > tags)
+*/
 .section-style{
  padding:3em 6em; 
 }
@@ -53,6 +75,11 @@ header{
   font-style: italic;
 }
 
+
+
+/* Footer styles 
+  (all the styles inside the < footer > tag)
+*/
 footer{
   text-align: center;
   background-color: WhiteSmoke;
@@ -60,25 +87,47 @@ footer{
   padding-bottom: 1em;
 }
 
-ul{
+footer ul{
   list-style-type: none;
   padding: 8px 0;
   margin: 0;
 }
 
-li{
+footer li{
   display: inline;
   padding-left: 1em;
   padding-right: 1em; 
 }
 
-a{
+footer a{
 text-decoration: none;
 color: black;
 }
 
-@media only screen and (max-width: 500px) {
-  header{
+
+
+/* Responsive styles 
+  (the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
+*/
+@media only screen and (max-width: 1024px) {
+  body  {
+    color:blue;
+  }
+}
+
+/*ipad potrait*/
+@media only screen and (max-width: 768px) {
+  body  {
+    color:red;
+  }
+}
+
+/*iPhone landscape*/
+@media only screen and (max-width: 480px) {
+  body  {
+    color:green;
+  }
+    header{
     height: 9em;
     padding: 3em 0;
   }
@@ -97,3 +146,12 @@ color: black;
          padding:1em 1em;
     }
 }
+
+/*iPhone portrait*/
+@media only screen and (max-width: 320px) {
+  body  {
+    color:purple;
+  }
+}
+
+
