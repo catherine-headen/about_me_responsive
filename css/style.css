@@ -1,0 +1,99 @@
+* {
+  margin:0;
+  padding:0;
+}
+
+body{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header{ 
+  margin-top:0;
+  color: white;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  height: 500px;
+  background-image: url(https://images.unsplash.com/photo-1433733071959-30cd185d14a8?q=80&fm=jpg&s=2bb5c5d8e0b1e5a0c994fc660681348e);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #fff;
+}
+
+.intro-small {
+  font-size: 1.5em;
+  margin-top: 0;
+  padding-top: 175px;
+  margin-bottom:0;
+}
+
+.intro-name {
+  font-size: 5em;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.section-style{
+ padding:3em 6em; 
+}
+
+.section-header{
+ text-transform: uppercase;
+  font-size: 1em;
+}
+
+.question, .response {
+  padding-left: 3em;
+  margin-top: 1em;
+}
+
+.question {
+  font-style: italic;
+}
+
+footer{
+  text-align: center;
+  background-color: WhiteSmoke;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+ul{
+  list-style-type: none;
+  padding: 8px 0;
+  margin: 0;
+}
+
+li{
+  display: inline;
+  padding-left: 1em;
+  padding-right: 1em; 
+}
+
+a{
+text-decoration: none;
+color: black;
+}
+
+@media only screen and (max-width: 500px) {
+  header{
+    height: 9em;
+    padding: 3em 0;
+  }
+  .intro-small{
+    padding-top: 1em;
+  }
+    .intro-name {
+        font-size: 3em;
+    }
+    li{
+      display: block;
+      padding:1em 1em;
+    }
+
+    a{
+         padding:1em 1em;
+    }
+}
